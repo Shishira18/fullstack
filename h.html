@@ -1,0 +1,31 @@
+<html>
+<head>
+<style type="text/css">
+body{
+     font-size:20px;
+     font-color:black;
+    }
+.word{
+     font-size:20px;
+     font-color:red;
+     }
+</style>
+<script>
+function mouseOver1(id) {
+  document.getElementById(id).style.color = "red";
+}
+
+function mouseOut1(id) {
+  document.getElementById(id).style.color = "black";
+}
+
+</script>
+</head>
+<body><center>
+
+We are <span class="word" id="one" onmouseover="mouseOver1(id)" onmouseout="mouseOut1(id)"> Shishira and Swapna</span><br/>
+We are <span class="word" id="two" onmouseover="mouseOver1(id)" onmouseout="mouseOut1(id)"> Students<br/></span>
+We are studying in <span class="word" id="three" onmouseover="mouseOver1(id)" onmouseout="mouseOut1(id)"> VPT</span>
+</center>
+</body>
+</html>

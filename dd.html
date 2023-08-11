@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<script>
+var current="one";
+function to_top1(para) 
+ {
+ old_top= document.getElementById(current).style;
+ new_top= document.getElementById(para).style;
+ old_top.zIndex=new_top.zIndex; 
+ new_top.zIndex="3";
+ current=para;
+}
+
+</script>
+</head>
+<body><center>
+<p><para id="one" zIndex="3">Once upon a time, there was a Greek King, Midas.<br/>
+He was very rich and had lots of Gold. He had a daughter, who he loved a lot.<br/>
+Midas wished that everything he touched would turn into gold.His wish was granted<br/>
+On his way home, he touched rocks and plants and they turned into gold.<br/>
+As he reached home, in excitement he hugged his daughter, who turned into gold.<br/>
+Midas was devastated and he had learnt his lesson.<br/>Upon learning his lesson, Midas asked the angel to take his wish away.<br/>
+Greed is not good for you. Be content and satisfied to lead a happy and fulfilling life.</p>
+<p><para id="two" zIndex="2">Once upon a time, there was a Greek King, Midas.<br/>
+He was very rich and had lots of Gold. He had a daughter, who he loved a lot.<br/>
+Midas wished that everything he touched would turn into gold.His wish was granted<br/>
+On his way home, he touched rocks and plants and they turned into gold.<br/>
+As he reached home, in excitement he hugged his daughter, who turned into gold.<br/>
+Midas was devastated and he had learnt his lesson.<br/>Upon learning his lesson, Midas asked the angel to take his wish away.<br/>
+Greed is not good for you. Be content and satisfied to lead a happy and fulfilling life.</p>
+
+</center>
+</body>
+</html>

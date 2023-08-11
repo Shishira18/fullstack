@@ -1,0 +1,23 @@
+<html>
+<head><title>Time table</title>
+</head>
+<body>
+ <table>
+     <tr>
+        <table border="1" align="left" width="400" height="100">
+        <th colspan="9"><b>Time Table</b></th>
+     </tr>
+     <tr>
+       <td><center><b>Day/Time</b></center></td>
+       <td><center><b>9-10</b></center></td>
+       <td><center><b>10-11</b></center></td>
+       <td><center><b>11-12</b></center></td>
+       <td><center><b>12-1</b></center></td>
+       <td><center><b>1-2</b></center></td>
+       <td><center><b>2-3</b></center></td>
+       <td><center><b>3-4</b></center></td>
+       <td><center><b>4-5</b></center></td>
+     </tr>
+ </table>
+</body>
+</html>

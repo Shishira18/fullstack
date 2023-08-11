@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Registration</title>
+<style>
+body{
+       width: 200px;
+       border: 5px solid blue;
+       padding: 50px;
+       margin: 500px;
+       object-fit: none;  
+       object-position:top;
+     }
+      
+</style>
+<script type="text/javascript">
+function disp(){
+   var n=document.getElementById("name").value;
+   var uid=document.getElementById("uid").value;
+   alert("Registration of "+n+" success\nuser Id: "+uid);
+   }
+</script>
+</head>
+<body>
+<h2><center><u>Registration</u></center></h2>
+<form>
+<center><br>Name:<input type="text" id="name"/></br>
+<br>UID:<input type="text" id="uid"/></br>
+<br>Password:<input type="password" id="pwd"/></br></center>
+
+<center><br><label for="Gender">Gender:</label>
+<label for ="Male">Male:</label>
+<input type="radio" name="Gender" id="Male">
+<label for ="Female">Female:</label>
+<input type="radio" name="Gender" id="Female"></br></center>
+
+<center><br><label for="Branch">Branch:</label>
+<select name="Branch" id="Branch">
+<option>Select an option</option>
+<option value="CSE">CSE</option>
+<option value="EC">EC</option>
+<option value="CE">CE</option>
+<option value="ME">ME</option>
+<option value="AT">AT</option></select></br></center>
+
+<center><br><label for="Address">Address:</label></br>
+<br>
+<textarea id="Address" name="Address" rows="4" cols="30"></textarea></br></center>
+
+<center><br><label for="Hobbies">Hobbies:</label></br>
+<br><input type="checkbox" id="TV" name="TV">
+<label for="TV">TV</label></br>
+<br><input type="checkbox" id="Reading" name="Reading">
+<label for="Reading">Reading</label></br>
+<br><input type="checkbox" id="Browsing" name="Browsing">
+<label for="Browsing">Browsing</label></br>
+<br><input type="checkbox" id="Drawing" name="Drawing">
+<label for="Drawing">Drawing</label></br></center>
+
+<center><br><button type="button" value="Submit" onclick="disp()">Submit</button>
+<button type="reset" value="submit">Reset</button></center> 
+</form>  
+</br>
+
+
+</body>
+</html>

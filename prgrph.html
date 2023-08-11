@@ -1,0 +1,27 @@
+<html>
+<head>
+<style type="text/css">
+body{
+     font-size:20px;
+     font-color:black;
+    }
+.word{
+     font-size:20px;
+     font-color:red;
+     }
+</style>
+<script type="text/javascript">
+function change() {
+  document.getElementById("one").style.color = "red";
+}
+
+function change-back() {
+  document.getElementById("one").style.color = "black";
+}
+
+</script>
+</head>
+<body>
+My name is<span class="word" id="one" onmouseover="change()" onmouseout="change-back()">Shishira</span>
+</body>
+</html>

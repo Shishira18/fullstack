@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>vptstore</title>
+<script type="text/javascript">
+function toggle(item_check,qty_text)
+     {
+       item=document.getElementById(item_check);
+       qty=document.getElementById(qty_text);
+       if(item.checked)
+         {
+           qty.disabled=false;
+          }
+       else
+          {
+            qty.disabled=true;
+          }
+      }
+</script>
+
+<script type="text/javascript">
+function bill()
+    {
+      items=document.getElementsByName('item');
+      quantities=document.getElementsByName('qty');
+      cost_list=[];
+      qty_list=[];
+      amount=0;
+      for(i of items)
+        {
+          if(i.checked)
+           {
+            cost_list.push(i.value);
+           }
+          else
+           {
+            cost_list.push(0);
+           }
+       for(j of quantities)
+         {
+           qty_list.push(Number(j.value));
+         }
+       for(k=0;k<cost_list.length;k++)
+         {
+          amount=amount+(cost_list[k]*qty_list[k]);
+         }
+       document.getElementById(amt).innerHTML="Total amount=Rs."+amount;
+     }      
+
+</script>
+</head>
+<body>
+<form>
+<h1><center><u>VPT STORE</u></center></h1>
+<table>
+<table border="1" align="center" width="400" height="100">
+<tr>
+  <th>Select</th>
+  <th>Item</th>
+  <th>Quantity</th>
+</tr>
+
+<tr>
+<td><center><input type="checkbox" name="item" id="choc" value=1 onchange="toggle(id,'chocqty')"></center></td>
+<td><center>Chocolate Rs.1/-</center></td>
+<td><center><input type="text" name="qty" id="chocqty" disabled=true></td>
+</tr>
+
+<tr>
+<td><center><input type="checkbox" name="item" id="pe" value=10 onchange="toggle(id,'peqty')"></center></td>
+<td><center>Pen Rs.10/-</center></td>
+<td><center><input type="text" name="qty" id="peqty" disabled=true></td>
+</tr>
+
+<tr>
+<td><center><input type="checkbox" name="item" id="pen" value=5 onchange="toggle(id,'penqty')"></center></td>
+<td><center>Pencil Rs.5/-</center></td>
+<td><center><input type="text" name="qty" id="penqty" disabled=true></td>
+</tr>
+
+
+<tr>
+<td><center><input type="checkbox" name="item" id="sc" value=15 onchange="toggle(id,'scqty')"></center></td>
+<td><center>Scale Rs.15/-</center></td>
+<td><center><input type="text" name="qty" id="scqty" disabled=true></td>
+</tr>
+
+<tr>
+<td><center><input type="checkbox" name="item" id="er" value=5 onchange="toggle(id,'erqty')"></center></td>
+<td><center>Eraser Rs.5/-</center></td>
+<td><center><input type="text" name="qty" id="erqty" disabled=true></td>
+</tr>
+</table>
+<center><br><button type="button" id="amt" value="bill" onclick="bill()">Bill</button>
+</form>
+</body>
+
+</html>

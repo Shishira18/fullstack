@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>vptstore</title>
+<script type="text/javascript">
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+<h1><center><u>VPT STORE</u></center></h1>
+<table>
+<tr>
+  <th>Select</th>
+  <th>Item</th>
+  <th>Quantity</th>
+</tr>
+</table>
+</body>
+</html>
